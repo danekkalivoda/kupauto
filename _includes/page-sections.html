@@ -1,0 +1,130 @@
+{% for section in page.sections%}
+
+<section 
+  class="{% if section.padding-top %} pt-4 sm:pt-8{% endif %} pb-4 sm:pb-8 sections-content relative {% if section.images and section.images != '' %}z-40{% endif %}" 
+  data-sal="slide-up"
+  data-sal-delay="50" 
+  data-sal-duration="700">
+
+  <div class="max-w-6xl mx-auto px-3 sm:px-6 relative z-10">
+    {% if section.header and section.header != '' %}
+      <h2 class="
+        {{ section.header-alignment }}
+        {% if section.header-padding-top %}pt-4 sm:pt-8 {% endif %}
+        {% if section.header-padding-bottom %}pb-4 {% endif %}
+        text-green-500 text-2xl font-medium relative">
+        <a name="{{ section.header | slugify: 'latin' }}" class="absolute -mt-24 sm:-mt-32 h-20 translate-y-10px"></a>
+        {{ section.header }}
+      </h2>
+    {% endif %}
+    {% if section.subHeader and section.subHeader != '' %}
+      <p class="{{ section.header-alignment }} font-normal text-lg text-gray-600">
+        {{ section.subHeader }}
+      </p>
+      <hr class="border-b border-green-500 w-10 my-6">
+    {% endif %}
+
+    {% if section.images and section.images != '' %}
+      <script src="{{ "assets/js/gallery.js" | relative_url }}" defer></script>
+      <div id="app" class="-mx-1 sm:-mx-2">
+          <gallery :images="[
+            {% for image in section.images %}
+              '/static{{ image }}?nf_resize=fit&w=800',
+            {% endfor %}
+          ]" template="{{section.template}}"></gallery>
+      </div>
+    {% endif %}
+
+    {% if section.blocks and section.blocks != '' %}
+      <div class="flex flex-wrap justify-center -mx-2 sm:-mx-4">
+        {% for block in section.blocks %}
+          <div class="flex flex-col items-stretch {{ section.vertical-alignment}} px-2 sm:px-4 w-{{ block.mobile-width-class }} md:w-{{ block.tablet-width-class }} lg:w-{{ block.desktop-width-class }}">
+            {% if block.type == "texts" %}
+              <div class='{{block.alignment}} {{ block.block-style }}{% if section.block-margin-bottom %} mb-4 sm:mb-8{% endif %}{% if block.light-texts %} border-gray-700{% endif %}'>
+                {% if block.header and block.header != '' %}
+                  <h3 class='{{block.font-size}} font-bold{% if block.light-texts%} text-white{% endif %}'>{{ block.header }}</h3>
+                {% endif %}
+                {% if block.text and block.text != '' %}
+                  <div class='{{block.font-size}}{% if block.light-texts%} text-gray-400{% endif %}{% if block.header and block.header != "" %} mt-2{% endif %}'>{{ block.text | markdownify }}</div>
+                {% endif %}
+              </div>
+            {% endif %}
+            {% if block.type == "media" %}
+              <div class="{{block.alignment}}{% if section.block-margin-bottom %} mb-4 sm:mb-8{% endif %}">
+                {% if block.image and block.image != "" %}
+                    <div class="relative overflow-hidden {% if block.aspect-ratio and block.aspect-ratio != '' %} block {{block.aspect-ratio}}{% else %}inline-block{% endif %} {% if section.block-margin-bottom == false %}my-2 sm:my-4{% endif %}">
+                      <img data-src="/static{{ block.image }}" alt="{{ block.header }}" class="lozad z-10 transition-slow opacity-0 opacity-100 {% if block.aspect-ratio and block.aspect-ratio != '' %}w-full h-full absolute top-0 left-0 object-cover rounded{% else %}inline-block{% endif %}">
+                      <div class="absolute w-full h-full -translate-y-1/2 z-0 transition-slow">
+                        <div class="spinner"></div>
+                      </div>
+                    </div>
+                {% endif %} 
+                {% if block.video and block.video != "" %}
+                  <div class="relative overflow-hidden rounded embed-responsive {% if section.block-margin-bottom == false %}my-2 sm:my-4{% endif %} {{block.aspect-ratio}}">
+                    {{ block.video }}
+                  </div>
+                {% endif %} 
+              </div>
+            {% endif %}
+            {% if block.type == "blog-posts" %}
+              {% include section-articles.html %}
+            {% endif %}
+            {% if block.type == "contact-forms" %}
+            <div class="mx-auto w-full md:w-1/2">
+              <div class='{{block.alignment}} {{ block.block-style }}{% if section.block-margin-bottom %} mb-4 sm:mb-8{% endif %}{% if block.light-texts %} border-gray-700{% endif %}'>
+                {% if block.header and block.header != '' %}
+                  <h3 class='{{block.font-size}} font-bold{% if block.light-texts%} text-white{% endif %} pb-4'>{{ block.header }}</h3>
+                {% endif %}  
+                <form action="https://getsimpleform.com/messages?form_api_token=9d24dc44dc61e45779226ca35e65732e" method="post" class="w-full mt-2">
+                  <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+                  <input type='hidden' name='redirect_to' value='https://elated-goodall-275fa8.netlify.com/odeslany-formular' />
+                  <div class="mb-4">
+                    <div class="relative border rounded mb-4 appearance-none label-floating">
+                      <input class="w-full py-2 px-3 leading-normal rounded focus:outline-none focus:shadow-outline" id="name" name="name" type="text" placeholder="Jméno" required>
+                      <label class="absolute block top-0 left-0 w-full px-3 py-2 text-gray-500 leading-normal text-left" for="name">
+                        Jméno
+                      </label>
+                    </div>  
+                  </div>
+                  <div class="mb-4">
+                    <div class="relative border rounded mb-4 appearance-none label-floating">
+                      <input class="w-full py-2 px-3 leading-normal rounded focus:outline-none focus:shadow-outline" id="email" name="email" type="text" placeholder="E-mail" required>
+                      <label class="absolute block top-0 left-0 w-full px-3 py-2 text-gray-500 leading-normal text-left" for="email">
+                        E-mail
+                      </label>
+                    </div>  
+                  </div>
+                  <div class="mb-4">
+                    <div class="relative border rounded mb-4 appearance-none label-floating">
+                      <input class="w-full py-2 px-3 leading-normal rounded focus:outline-none focus:shadow-outline" id="phone" name="phone" type="text" placeholder="Telefon">
+                      <label class="absolute block top-0 left-0 w-full px-3 py-2 text-gray-500 leading-normal text-left" for="phone">
+                        Telefon
+                      </label>
+                    </div>  
+                  </div>
+                  <div class="mb-4">
+                    <div class="relative border rounded mb-4 appearance-none label-floating">
+                      <textarea rows="5" class="w-full py-2 px-3 leading-normal block rounded focus:outline-none focus:shadow-outline" id="message" name="message" type="text" placeholder="Zpráva pro mě" required></textarea>
+                      <label class="absolute block top-0 left-0 w-full px-3 py-2 text-gray-500 leading-normal text-left" for="message">
+                          Zpráva pro mě
+                      </label>
+                    </div>  
+                  </div>
+                  <button class="shadow bg-green-500 hover:bg-green-700 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded transition" type="submit">
+                    Odeslat
+                  </button>
+                </form>
+              </div>
+            </div>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+  {% if section.section-background and section.section-background != "" %}
+  <div class="{{section.section-background}} absolute inset-0 z-0 -skew-y-1"></div>
+  {% endif %}
+</section>
+
+{% endfor %}

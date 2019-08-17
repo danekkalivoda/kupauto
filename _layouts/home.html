@@ -1,0 +1,33 @@
+---
+layout: default
+--- 
+
+<section class="pt-20 bg-gray-600 sm:bg-transparent relative overflow-hidden -skew-y-1">
+  <div class="relative rounded-full w-40 h-40 m-auto mt-8 overflow-hidden sm:absolute sm:w-full sm:h-full sm:mt-0 sm:rounded-none sm:-mt-12">
+    <img data-src="/static/images/uploads/andy-homepage-pure.jpg" class="lozad w-full h-full absolute top-0 object-cover z-0 transition-slow opacity-0 skew-y-1">
+    <div class="absolute w-full h-full translate-y-1/2 z-0 transition-slow">
+      <div class="spinner"></div>
+    </div>
+  </div>
+  <div class="px-4 pt-4 sm:pt-12 lg:pt-24 sm:pb-10 lg:pb-24 text-center sm:text-left max-w-6xl mx-auto relative z-30 skew-y-1">
+    <div class="max-w-xs mx-auto sm:pr-16 md:pr-8 lg:pr-0 sm:mx-2">
+      <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold text-white lg:mt-12">{{ page.title }}</h1>
+      <p class="text-white text-sm lg:text-xl sm:pb-0">pomůžu ti být lepší, zdravější...</p>
+      <p class="text-white sm:pr-12 md:pr-0 text-xs md:text-sm xl:text-base pb-4 opacity-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit nibh, laoreet sed mi vel, consectetur sollicitudin dui.</p>
+      <a href="#" class="mb-16 sm:mb-4 bg-transparent hover:bg-white text-white font-semibold text-sm lg:text-base hover:text-green-500 py-2 px-4 border-2 border-gray-500 sm:border-white hover:border-transparent rounded inline-block transition">Co klientům nabízím</a>
+    </div>
+  </div>
+  <div class="absolute hidden sm:block bottom-0 sm:h-full w-3/5 md:w-1/2 lg:w-3/5 -ml-8 sm:-ml-12 md:-ml-8 lg:-ml-24 -mb-16 z-0 skew-x-10 bg-gradient-l-black-transparent-25 z-10"></div>
+</section>
+
+{% include page-sections.html %}
+
+{% if page.content and page.content != "" %}
+<section class="{{ page.background }}{% if page.margin-bottom %} mb-4 sm:mb-8{% endif %}{% if page.margin-top %} mt-4 sm:mt-8{% endif %}{% if page.light-texts %} text-white{% endif %}">
+  <div class="max-w-6xl mx-auto flex flex-wrap justify-center px-4 sm:px-8 lg:px-24">
+      <main class="flex-col w-full md:w-3/4 py-8 sm:px-4 md:px-8 leading-normal {{page.alignment}}">
+        {{ content }}
+      </main>
+  </div>
+</section>
+{% endif %}

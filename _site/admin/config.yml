@@ -1,0 +1,419 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+editor:
+     preview: false
+collections:
+  - name: "blog" # Used in routes, e.g., /admin/collections/blog
+    label: "Články" # Used in the UI
+    folder: "_posts/blog" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Nadpis", name: "title", widget: "string"}
+      - {label: "Datum", name: "date", widget: "date", format: "DD-MM-YYYY", dateFormat: true, timeFormat: false}
+      - {label: "Krátký popis", name: "body", widget: "markdown", buttons: [bold, italic], required: false}
+      - {label: "Aktivní", name: "published", widget: "boolean", default: true}
+      - {label: "Obrázek", name: image, widget: image, required: false}
+      - label: "Hlavní obsah"
+        name: "sections"
+        widget: "list"
+        types:
+          - label: Galerie
+            name: gallery
+            widget: object
+            fields:
+              - label: Nadpis
+                name: header
+                widget: string
+                required: false
+              - label: Nadpis - zarovnání
+                name: header-alignment
+                required: false
+                widget: select
+                options:
+                  - { label: "Levá", value: "text-left" }
+                  - { label: "Střed", value: "text-center" }
+                  - { label: "Pravá", value: "text-right" }
+              - label: Rozložení
+                name: template
+                required: false
+                widget: select
+                options:
+                  - { label: "Vyberte", value: "" }
+                  - { label: "Varianta 1", value: "template-1" }
+              - label: Pozadí
+                name: section-background
+                required: false
+                widget: select
+                options:
+                  - { label: "Žádné", value: "none" }
+                  - { label: "Světlé", value: "bg-white" }
+                  - { label: "Tmavé", value: "bg-gray-800" }
+              - {label: "Světlé texty", name: "light-texts", widget: "boolean", default: false, required: false}
+              - {label: "Horní odsazení nadpisu", name: "header-padding-top", widget: "boolean", default: false, required: false}
+              - {label: "Dolní odsazení nadpisu", name: "header-padding-bottom", widget: "boolean", default: false, required: false}
+              - {label: "Horní odsazení sekce", name: "padding-top", widget: "boolean", default: false, required: false}
+              - {label: "Dolní odsazení bloků", name: "block-margin-bottom", widget: "boolean", default: false, required: false}
+              - label: Fotky
+                name: images
+                widget: list
+                field: {label: Image, name: image, widget: image}
+          - label: Mapa
+            name: map
+            widget: object
+            fields:
+              - {label: "Location", name: "location", widget: "map" }
+          - label: Bloky
+            name: blocks
+            widget: object
+            fields:
+              - {label: Nadpis, name: header, widget: string, required: false}
+              - {label: Pod-nadpis, name: subHeader, widget: string, required: false}
+              - label: Zarovnání nadpisu
+                name: header-alignment
+                required: false
+                widget: select
+                options:
+                  - { label: "Levá", value: "text-left" }
+                  - { label: "Střed", value: "text-center" }
+                  - { label: "Pravá", value: "text-right" }
+              - label: Bloky
+                name: blocks
+                widget: list
+                types:
+                  - label: Texty
+                    name: texts
+                    widget: object
+                    fields:
+                      - {label: Nadpis, name: header, widget: string, required: false}
+                      - {label: Text, name: text, widget: markdown, buttons: [bold, italic, heading-two, quote, bulleted-list, numbered-list], required: false}
+                      - label: Velikost textu
+                        name: font-size
+                        required: false
+                        widget: select
+                        options:
+                          - { label: "Malé", value: "text-sm" }
+                          - { label: "Normální", value: "" }
+                          - { label: "Velké", value: "text-xl" }
+                      - label: Zarovnání
+                        name: alignment
+                        required: false
+                        widget: select
+                        options:
+                          - { label: "Levá", value: "text-left" }
+                          - { label: "Střed", value: "text-center" }
+                          - { label: "Pravá", value: "text-right" }
+                      - label: Styl bloků
+                        name: block-style
+                        required: false
+                        widget: select
+                        options:
+                          - { label: "Podbarvený - světle šedá", value: "flex-grow bg-gray-300 rounded p-4 md:p-8" }
+                          - { label: "Podbarvený - bílá", value: "flex-grow bg-white shadow rounded p-4 md:p-8" }
+                          - { label: "Orámovaný", value: "flex-grow border border-gray-300 rounded p-4 md:p-8" }
+                      - {label: "Světlé texty", name: "light-texts", widget: "boolean", default: false, required: false}
+                      - {label: Desktop - šířka, name: "desktop-width-class", widget: "select", required: false, options: ["1/2","1/3","2/3", "1/4", "3/4", "1/5", "2/5", "3/5", "4/5", "1/6", "5/6", "1/10", "9/10", "1/20", "19/20", "full"]}
+                      - {label: Tablet - šířka, name: "tablet-width-class", widget: "select", required: false, options: ["1/2","1/3","2/3", "1/4", "3/4", "1/5", "2/5", "3/5", "4/5", "1/6", "5/6", "1/10", "9/10", "1/20", "19/20", "full"]}
+                      - {label: Mobile - šířka, name: "mobile-width-class", widget: "select", options: ["1/2","1/3","2/3", "1/4", "3/4", "1/5", "2/5", "3/5", "4/5", "1/6", "5/6", "1/10", "9/10", "1/20", "19/20", "full"]}
+                  - label: Obrázek / video
+                    name: media
+                    widget: object
+                    fields:
+                      - label: Obrázek
+                        name: image
+                        widget: image
+                        required: false
+                      - label: Youtube video
+                        name: video
+                        widget: string
+                        required: false
+                      - label: Zarovnání
+                        name: alignment
+                        required: false
+                        widget: select
+                        options:
+                          - { label: "Levá", value: "text-left" }
+                          - { label: "Střed", value: "text-center" }
+                          - { label: "Pravá", value: "text-right" }
+                      - label: Poměr stran
+                        name: aspect-ratio
+                        required: false
+                        widget: select
+                        options:
+                          - { label: "čtverec", value: "aspect-ratio-square"}
+                          - { label: "16:9", value: "aspect-ratio-16/9"}
+                          - { label: "4:3", value: "aspect-ratio-4/3"}
+                          - { label: "21:9", value: "aspect-ratio-21/9"}
+                      - {label: Desktop - šířka, name: "desktop-width-class", widget: "select", required: false, options: ["1/2","1/3","2/3", "1/4", "3/4", "1/5", "2/5", "3/5", "4/5", "1/6", "5/6", "1/10", "9/10", "1/20", "19/20", "full"]}
+                      - {label: Tablet - šířka, name: "tablet-width-class", widget: "select", required: false, options: ["1/2","1/3","2/3", "1/4", "3/4", "1/5", "2/5", "3/5", "4/5", "1/6", "5/6", "1/10", "9/10", "1/20", "19/20", "full"]}
+                      - {label: Mobile - šířka, name: "mobile-width-class", widget: "select", options: ["1/2","1/3","2/3", "1/4", "3/4", "1/5", "2/5", "3/5", "4/5", "1/6", "5/6", "1/10", "9/10", "1/20", "19/20", "full"]}
+                  - label: Články z blogu
+                    name: blog-posts
+                    widget: object
+                    fields:
+                      - {label: Nadpis, name: header, widget: string, required: false}
+                      - {label: Počet článků, name: posts-count, widget: string}
+                      - {label: Desktop - šířka, name: "desktop-width-class", widget: "select", required: false, options: ["1/2","1/3","2/3", "1/4", "3/4", "1/5", "2/5", "3/5", "4/5", "1/6", "5/6", "1/10", "9/10", "1/20", "19/20", "full"]}
+                      - {label: Tablet - šířka, name: "tablet-width-class", widget: "select", required: false, options: ["1/2","1/3","2/3", "1/4", "3/4", "1/5", "2/5", "3/5", "4/5", "1/6", "5/6", "1/10", "9/10", "1/20", "19/20", "full"]}
+                      - {label: Mobile - šířka, name: "mobile-width-class", widget: "select", options: ["1/2","1/3","2/3", "1/4", "3/4", "1/5", "2/5", "3/5", "4/5", "1/6", "5/6", "1/10", "9/10", "1/20", "19/20", "full"]}
+                  - label: Kontaktní formuláře
+                    name: contact-forms
+                    widget: object
+                    fields:
+                      - {label: Nadpis, name: header, widget: string, required: false}
+                      - label: Nadpis - zarovnání
+                        name: header-alignment
+                        required: false
+                        widget: select
+                        options:
+                          - { label: "Levá", value: "text-left" }
+                          - { label: "Střed", value: "text-center" }
+                          - { label: "Pravá", value: "text-right" }
+                      - {label: Po odeslání přesměrovat, name: redirect-to, widget: string, required: false}
+                      - {label: Desktop - šířka, name: "desktop-width-class", widget: "select", required: false, options: ["1/2","1/3","2/3", "1/4", "3/4", "1/5", "2/5", "3/5", "4/5", "1/6", "5/6", "1/10", "9/10", "1/20", "19/20", "full"]}
+                      - {label: Tablet - šířka, name: "tablet-width-class", widget: "select", required: false, options: ["1/2","1/3","2/3", "1/4", "3/4", "1/5", "2/5", "3/5", "4/5", "1/6", "5/6", "1/10", "9/10", "1/20", "19/20", "full"]}
+                      - {label: Mobile - šířka, name: "mobile-width-class", widget: "select", options: ["1/2","1/3","2/3", "1/4", "3/4", "1/5", "2/5", "3/5", "4/5", "1/6", "5/6", "1/10", "9/10", "1/20", "19/20", "full"]}
+              - {label: "Horní odsazení nadpisu", name: "header-padding-top", widget: "boolean", default: false, required: false}
+              - {label: "Dolní odsazení nadpisu", name: "header-padding-bottom", widget: "boolean", default: false, required: false}
+              - {label: "Horní odsazení sekce", name: "padding-top", widget: "boolean", default: false, required: false}
+              - {label: "Dolní odsazení bloků", name: "block-margin-bottom", widget: "boolean", default: false, required: false}
+              - label: Vertikální zarovnání bloků
+                name: vertical-alignment
+                required: false
+                widget: select
+                options:
+                  - { label: "Nahoře", value: "justify-start" }
+                  - { label: "Střed", value: "justify-center" }
+                  - { label: "Dolů", value: "justify-end" }
+              - label: Pozadí
+                name: section-background
+                required: false
+                widget: select
+                options:
+                  - { label: "Žádné", value: "none" }
+                  - { label: "Světlé", value: "bg-white" }
+                  - { label: "Tmavé", value: "bg-gray-800" }
+  - label: "Stránky"
+    name: "pages"
+    folder: '/'
+    create: true
+    format: frontmatter
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+      - {label: "Nadpis", name: "title", widget: "string"}
+      - label: "Hlavní obsah"
+        name: "sections"
+        widget: "list"
+        types:
+          - label: Galerie
+            name: gallery
+            widget: object
+            fields:
+              - label: Nadpis
+                name: header
+                widget: string
+                required: false
+              - label: Nadpis - zarovnání
+                name: header-alignment
+                required: false
+                widget: select
+                options:
+                  - { label: "Levá", value: "text-left" }
+                  - { label: "Střed", value: "text-center" }
+                  - { label: "Pravá", value: "text-right" }
+              - label: Rozložení
+                name: template
+                required: false
+                widget: select
+                options:
+                  - { label: "Vyberte", value: "" }
+                  - { label: "Varianta 1", value: "template-1" }
+              - label: Pozadí
+                name: section-background
+                required: false
+                widget: select
+                options:
+                  - { label: "Žádné", value: "none" }
+                  - { label: "Světlé", value: "bg-white" }
+                  - { label: "Tmavé", value: "bg-gray-800" }
+              - {label: "Světlé texty", name: "light-texts", widget: "boolean", default: false, required: false}
+              - {label: "Horní odsazení nadpisu", name: "header-padding-top", widget: "boolean", default: false, required: false}
+              - {label: "Dolní odsazení nadpisu", name: "header-padding-bottom", widget: "boolean", default: false, required: false}
+              - {label: "Horní odsazení sekce", name: "padding-top", widget: "boolean", default: false, required: false}
+              - {label: "Dolní odsazení bloků", name: "block-margin-bottom", widget: "boolean", default: false, required: false}
+              - label: Fotky
+                name: images
+                widget: list
+                field: {label: Image, name: image, widget: image}
+          - label: Mapa
+            name: map
+            widget: object
+            fields:
+              - {label: "Location", name: "location", widget: "map" }
+          - label: Bloky
+            name: blocks
+            widget: object
+            fields:
+              - {label: Nadpis, name: header, widget: string, required: false}
+              - {label: Pod-nadpis, name: subHeader, widget: string, required: false}
+              - label: Zarovnání nadpisu
+                name: header-alignment
+                required: false
+                widget: select
+                options:
+                  - { label: "Levá", value: "text-left" }
+                  - { label: "Střed", value: "text-center" }
+                  - { label: "Pravá", value: "text-right" }
+              - label: Bloky
+                name: blocks
+                widget: list
+                types:
+                  - label: Texty
+                    name: texts
+                    widget: object
+                    fields:
+                      - {label: Nadpis, name: header, widget: string, required: false}
+                      - {label: Text, name: text, widget: markdown, buttons: [bold, italic, heading-two, quote, bulleted-list, numbered-list], required: false}
+                      - label: Velikost textu
+                        name: font-size
+                        required: false
+                        widget: select
+                        options:
+                          - { label: "Malé", value: "text-sm" }
+                          - { label: "Normální", value: "" }
+                          - { label: "Velké", value: "text-xl" }
+                      - label: Zarovnání
+                        name: alignment
+                        required: false
+                        widget: select
+                        options:
+                          - { label: "Levá", value: "text-left" }
+                          - { label: "Střed", value: "text-center" }
+                          - { label: "Pravá", value: "text-right" }
+                      - label: Styl bloků
+                        name: block-style
+                        required: false
+                        widget: select
+                        options:
+                          - { label: "Podbarvený - světle šedá", value: "flex-grow bg-gray-300 rounded p-4 md:p-8" }
+                          - { label: "Podbarvený - bílá", value: "flex-grow bg-white shadow rounded p-4 md:p-8" }
+                          - { label: "Orámovaný", value: "flex-grow border border-gray-300 rounded p-4 md:p-8" }
+                      - {label: "Světlé texty", name: "light-texts", widget: "boolean", default: false, required: false}
+                      - {label: Desktop - šířka, name: "desktop-width-class", widget: "select", required: false, options: ["1/2","1/3","2/3", "1/4", "3/4", "1/5", "2/5", "3/5", "4/5", "1/6", "5/6", "1/10", "9/10", "1/20", "19/20", "full"]}
+                      - {label: Tablet - šířka, name: "tablet-width-class", widget: "select", required: false, options: ["1/2","1/3","2/3", "1/4", "3/4", "1/5", "2/5", "3/5", "4/5", "1/6", "5/6", "1/10", "9/10", "1/20", "19/20", "full"]}
+                      - {label: Mobile - šířka, name: "mobile-width-class", widget: "select", options: ["1/2","1/3","2/3", "1/4", "3/4", "1/5", "2/5", "3/5", "4/5", "1/6", "5/6", "1/10", "9/10", "1/20", "19/20", "full"]}
+                  - label: Obrázek / video
+                    name: media
+                    widget: object
+                    fields:
+                      - label: Obrázek
+                        name: image
+                        widget: image
+                        required: false
+                      - label: Youtube video
+                        name: video
+                        widget: string
+                        required: false
+                      - label: Zarovnání
+                        name: alignment
+                        required: false
+                        widget: select
+                        options:
+                          - { label: "Levá", value: "text-left" }
+                          - { label: "Střed", value: "text-center" }
+                          - { label: "Pravá", value: "text-right" }
+                      - label: Poměr stran
+                        name: aspect-ratio
+                        required: false
+                        widget: select
+                        options:
+                          - { label: "čtverec", value: "aspect-ratio-square"}
+                          - { label: "16:9", value: "aspect-ratio-16/9"}
+                          - { label: "4:3", value: "aspect-ratio-4/3"}
+                          - { label: "21:9", value: "aspect-ratio-21/9"}
+                      - {label: Desktop - šířka, name: "desktop-width-class", widget: "select", required: false, options: ["1/2","1/3","2/3", "1/4", "3/4", "1/5", "2/5", "3/5", "4/5", "1/6", "5/6", "1/10", "9/10", "1/20", "19/20", "full"]}
+                      - {label: Tablet - šířka, name: "tablet-width-class", widget: "select", required: false, options: ["1/2","1/3","2/3", "1/4", "3/4", "1/5", "2/5", "3/5", "4/5", "1/6", "5/6", "1/10", "9/10", "1/20", "19/20", "full"]}
+                      - {label: Mobile - šířka, name: "mobile-width-class", widget: "select", options: ["1/2","1/3","2/3", "1/4", "3/4", "1/5", "2/5", "3/5", "4/5", "1/6", "5/6", "1/10", "9/10", "1/20", "19/20", "full"]}
+                  - label: Články z blogu
+                    name: blog-posts
+                    widget: object
+                    fields:
+                      - {label: Nadpis, name: header, widget: string, required: false}
+                      - {label: Počet článků, name: posts-count, widget: string}
+                      - {label: Desktop - šířka, name: "desktop-width-class", widget: "select", required: false, options: ["1/2","1/3","2/3", "1/4", "3/4", "1/5", "2/5", "3/5", "4/5", "1/6", "5/6", "1/10", "9/10", "1/20", "19/20", "full"]}
+                      - {label: Tablet - šířka, name: "tablet-width-class", widget: "select", required: false, options: ["1/2","1/3","2/3", "1/4", "3/4", "1/5", "2/5", "3/5", "4/5", "1/6", "5/6", "1/10", "9/10", "1/20", "19/20", "full"]}
+                      - {label: Mobile - šířka, name: "mobile-width-class", widget: "select", options: ["1/2","1/3","2/3", "1/4", "3/4", "1/5", "2/5", "3/5", "4/5", "1/6", "5/6", "1/10", "9/10", "1/20", "19/20", "full"]}
+                  - label: Kontaktní formuláře
+                    name: contact-forms
+                    widget: object
+                    fields:
+                      - {label: Nadpis, name: header, widget: string, required: false}
+                      - label: Zarovnání
+                        name: alignment
+                        required: false
+                        widget: select
+                        options:
+                          - { label: "Levá", value: "text-left" }
+                          - { label: "Střed", value: "text-center" }
+                          - { label: "Pravá", value: "text-right" }
+                      - {label: Po odeslání přesměrovat, name: redirect-to, widget: string, required: false}
+                      - {label: Desktop - šířka, name: "desktop-width-class", widget: "select", required: false, options: ["1/2","1/3","2/3", "1/4", "3/4", "1/5", "2/5", "3/5", "4/5", "1/6", "5/6", "1/10", "9/10", "1/20", "19/20", "full"]}
+                      - {label: Tablet - šířka, name: "tablet-width-class", widget: "select", required: false, options: ["1/2","1/3","2/3", "1/4", "3/4", "1/5", "2/5", "3/5", "4/5", "1/6", "5/6", "1/10", "9/10", "1/20", "19/20", "full"]}
+                      - {label: Mobile - šířka, name: "mobile-width-class", widget: "select", options: ["1/2","1/3","2/3", "1/4", "3/4", "1/5", "2/5", "3/5", "4/5", "1/6", "5/6", "1/10", "9/10", "1/20", "19/20", "full"]}
+              - {label: "Horní odsazení nadpisu", name: "header-padding-top", widget: "boolean", default: false, required: false}
+              - {label: "Dolní odsazení nadpisu", name: "header-padding-bottom", widget: "boolean", default: false, required: false}
+              - {label: "Horní odsazení sekce", name: "padding-top", widget: "boolean", default: false, required: false}
+              - {label: "Dolní odsazení bloků", name: "block-margin-bottom", widget: "boolean", default: false, required: false}
+              - label: Vertikální zarovnání bloků
+                name: vertical-alignment
+                required: false
+                widget: select
+                options:
+                  - { label: "Nahoře", value: "justify-start" }
+                  - { label: "Střed", value: "justify-center" }
+                  - { label: "Dolů", value: "justify-end" }
+              - label: Pozadí
+                name: section-background
+                required: false
+                widget: select
+                options:
+                  - { label: "Žádné", value: "none" }
+                  - { label: "Světlé", value: "bg-white" }
+                  - { label: "Tmavé", value: "bg-gray-800" }
+      - {label: "Hlavní text", name: "body", widget: "markdown", buttons: [bold, italic, heading-two, quote, bulleted-list, numbered-list], required: false}
+      - label: Pozadí obsahu
+        name: background
+        required: false
+        widget: select
+        options:
+          - { label: "Světlé", value: "bg-white" }
+          - { label: "Tmavé", value: "bg-gray-800" }
+      - label: Zarovnání
+        name: alignment
+        required: false
+        widget: select
+        options:
+          - { label: "Levá", value: "text-left" }
+          - { label: "Střed", value: "text-center" }
+          - { label: "Pravá", value: "text-right" }
+      - {label: "Světlé texty", name: "light-texts", widget: "boolean", default: false, required: false}
+      - {label: "Horní odsazení sekce", name: "margin-top", widget: "boolean", default: false, required: false}
+      - {label: "Dolní odsazení bloků", name: "margin-bottom", widget: "boolean", default: false, required: false}
+      - {label: "Aktivní", name: "published", widget: "boolean", default: true}
+  - label: "Nastavení"
+    name: "settings"
+    files:
+      - label: "Menu"
+        name: "menu"
+        file: "_data/navigation.yml"
+        fields:
+          - label: Odkazy
+            name: links
+            widget: list
+            fields:
+              - {label: Text, name: text, widget: string}
+              - {label: Url, name: url, widget: string}

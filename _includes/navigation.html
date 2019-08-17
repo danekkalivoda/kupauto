@@ -1,0 +1,7 @@
+{% assign navurl = page.url | remove: 'index.html' %}
+{% for item in include.navigation.links %}
+    <a href="{{ item.url }}"{% if item.url == navurl %} data-current="current page"{% endif %} class="block py-3 lg:inline-block lg:p-0 text-gray-800 font-medium uppercase hover:text-green-600 hover:underline lg:ml-8 xl:ml-16">{{ item.text }}</a>
+    {% if item.subitems %}
+      {% include navigation.html navigation=item.subitems %}
+    {% endif %}
+{% endfor %}

@@ -1,0 +1,19 @@
+<!-- ---
+layout: compress
+---
+ -->
+<!DOCTYPE html>
+<html data-current="{{ page.section }}" lang="en">
+
+  {% include head.html %}
+
+  <body class="bg-gray-200" id="pageBody">
+
+    {% include header.html %}
+    
+  	{{ content }}
+
+    {% include footer.html %}
+    <script src="{{ "assets/js/app.js" | relative_url }}"></script>
+  </body>
+</html>  

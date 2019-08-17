@@ -1,0 +1,13 @@
+{% assign psize = site.posts | size %}
+{% if psize != 0 %} 
+    {% if block.header and block.header != "" %}
+      <h2 class="font-normal text-2xl text-center">{{block.header}}</h2>
+    {% endif %}
+    <div 
+      class="md:flex flex-wrap justify-center md:-mx-2 {% if section.block-margin-bottom %} mb-4 sm:mb-8{% endif %}"
+      >
+      {% for post in site.posts limit:block.posts-count %}
+        {% include list-article.html post=post %}
+      {% endfor %}
+    </div>
+{% endif %}

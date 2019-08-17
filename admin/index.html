@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Content Manager</title>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+  <!-- Include the script that builds the page and powers Netlify CMS -->
+  <script src="https://unpkg.com/netlify-cms@^2.9.2-beta.0/dist/netlify-cms.js"></script>
+  <script>
+    CMS.registerEditorComponent({
+      id: 'header3',
+      label: 'NadpisH3',
+      // A bogus field so that the component doesn't look weird when rendered:
+      fields: [
+        {label: 'H3',  name: "headerText", widget: 'string'}
+      ],
+      // Never match anything so that the separator will be recognized as a horizontal rule when the document is reloaded:
+      pattern: /.^/,
+      fromBlock: function(match) {
+        return {
+          headerText: match[1],
+          headerAlignment: match[2]
+        };
+      },
+      toBlock(obj) {
+        return '### ' + obj.headerText;
+      },
+      toPreview(obj) {
+        return '<h3>' + obj.headerText + '</h3>';
+      }
+    });
+    CMS.registerEditorComponent({
+      id: 'separator',
+      label: '---',
+      // A bogus field so that the component doesn't look weird when rendered:
+      fields: [{ label: 'Separator', widget: 'select', options: ['---'], default: '---' }],
+      // Never match anything so that the separator will be recognized as a horizontal rule when the document is reloaded:
+      pattern: /.^/,
+      toBlock(obj) {
+        return '---';
+      },
+      toPreview(obj) {
+        return '<hr>';
+      }
+    });
+  </script>
+  <script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+</body>
+</html>
