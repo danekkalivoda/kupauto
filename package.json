@@ -11,7 +11,7 @@
     "acorn": "^6.1.1",
     "autoprefixer": "^9.5.1",
     "babel-loader": "^8.0.6",
-    "browser-sync": "^2.26.5",
+    "browser-sync": "^2.26.7",
     "compression-webpack-plugin": "^2.0.0",
     "css-loader": "^2.1.1",
     "cssnano": "^4.1.10",
@@ -26,7 +26,9 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
     "image-webpack-loader": "^4.6.0",
+    "js-yaml": ">=3.13.1",
     "jshint": "^2.10.2",
+    "lodash": ">=4.17.13",
     "lozad": "^1.9.0",
     "postcss-import": "^11.1.0",
     "postcss-preset-env": "^6.6.0",
@@ -47,9 +49,7 @@
     "vue-loader": "^15.7.0",
     "vue-style-loader": "^4.1.2",
     "vue-template-compiler": "^2.6.10",
-    "webpack-stream": "^5.2.1",
-    "js-yaml": ">=3.13.1",
-    "lodash": ">=4.17.13"
+    "webpack-stream": "^5.2.1"
   },
   "scripts": {
     "build": "NODE_ENV=production gulp",
