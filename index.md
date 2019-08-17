@@ -31,14 +31,6 @@ sections:
     padding-top: true
     subHeader: 'moje kariéra, moje sny…'
     type: blocks
-  - header: ''
-    images:
-      - "/images/uploads/snímek-obrazovky-2019-08-08-v\_14.05.20.png"
-    margin-y: false
-    padding-top: true
-    section-background: bg-white
-    template: template-1
-    type: gallery
   - blocks:
       - desktop-width-class: 2/3
         mobile-width-class: full
