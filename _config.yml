@@ -4,7 +4,7 @@ description: A starter kit for using Tailwind with Jekyll
 plugins: [./_plugins/post.rb, ./_plugins/page.rb, ./_plugins/debug.rb, ./_plugins/i18n_filter.rb, 'jekyll-paginate-v2']
 
 baseurl: ""
-url: "https://objective-perlman-ff907b.netlify.com/"
+url: "https://kupauto.netlify.com"
 
 # Permalink format (/blog/ is ignored for pages)
 permalink: /:name/
