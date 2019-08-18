@@ -10,7 +10,7 @@ sections:
         mobile-width-class: 1/6
         tablet-width-class: 1/20
         type: media
-      - desktop-width-class: 2/3
+      - desktop-width-class: 1/2
         header: Autodoprava
         light-texts: true
         mobile-width-class: 5/6
