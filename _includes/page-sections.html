@@ -52,7 +52,7 @@
             {% if block.type == "media" %}
               <div class="{{block.alignment}}{% if section.block-margin-bottom %} mb-4 sm:mb-8{% endif %}">
                 {% if block.image and block.image != "" %}
-                    <div class="relative overflow-hidden {% if block.aspect-ratio and block.aspect-ratio != '' %} block {{block.aspect-ratio}}{% else %}inline-block{% endif %} {% if section.block-margin-bottom == false %}my-2 sm:my-4{% endif %}">
+                    <div class="relative overflow-hidden {% if block.aspect-ratio and block.aspect-ratio != '' %} block {{block.aspect-ratio}}{% else %}inline-block{% endif %} {% if section.block-margin-bottom == false %}mb-2 sm:mb-4{% endif %}">
                       <img data-src="/static{{ block.image }}" alt="{{ block.header }}" class="lozad z-10 transition-slow opacity-0 opacity-100 {% if block.aspect-ratio and block.aspect-ratio != '' %}w-full h-full absolute top-0 left-0 object-cover rounded{% else %}inline-block{% endif %}">
                       <div class="absolute w-full h-full -translate-y-1/2 z-0 transition-slow">
                         <div class="spinner"></div>
