@@ -20,6 +20,16 @@ sections:
           automobily, odtahové speciály. Převoz menších i větších nákladů a
           automobilů za rozumné ceny! Dále v nabídce také přeprava osob.
         type: texts
+      - image: /images/uploads/jachym.png
+        mobile-width-class: 1/6
+        tablet-width-class: 1/20
+        type: media
+      - desktop-width-class: 1/2
+        light-texts: false
+        mobile-width-class: 5/6
+        tablet-width-class: 3/4
+        text: test
+        type: texts
     header: Služby
     header-alignment: text-center
     header-padding-bottom: false
