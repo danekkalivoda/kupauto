@@ -5,10 +5,10 @@ sections:
   - block-margin-bottom: false
     blocks:
       - aspect-ratio: aspect-ratio-4/3
-        desktop-width-class: 1/3
+        desktop-width-class: null
         image: /images/uploads/jachym.png
         mobile-width-class: 1/6
-        tablet-width-class: 1/4
+        tablet-width-class: 1/20
         type: media
       - desktop-width-class: 2/3
         header: Autodoprava
