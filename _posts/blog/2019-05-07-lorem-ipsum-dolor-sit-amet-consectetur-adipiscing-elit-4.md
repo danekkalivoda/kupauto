@@ -3,7 +3,7 @@ layout: post
 title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
 date: 02-05-2019
 published: true
-image: /images/uploads/59b8eac89e47916.jpg
+image: /images/uploads/digitalsolutions-full.jpg
 sections:
   - blocks:
       - mobile-width-class: full
