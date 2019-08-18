@@ -47,10 +47,10 @@ sections:
         mobile-width-class: full
         tablet-width-class: 3/4
         type: contact-forms
-    header: Kontaktní formulář
+    header: Napište nám
     header-alignment: text-center
     padding-top: true
-    subHeader: napište mi
+    subHeader: ''
     type: blocks
     vertical-alignment: justify-center
 background: bg-gray-800
