@@ -36,7 +36,7 @@ sections:
     header: Dovoz aut na zakázku
     header-alignment: text-center
     padding-top: true
-    section-background: bg-gray-900
+    section-background: bg-black
     subHeader: ''
     type: blocks
   - block-margin-bottom: true
