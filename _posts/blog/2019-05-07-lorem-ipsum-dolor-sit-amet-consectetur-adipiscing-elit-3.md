@@ -3,7 +3,7 @@ layout: post
 title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
 date: 03-05-2019
 published: true
-image: /images/uploads/59b8eac8cbe6715.jpg
+image: /images/uploads/zrokna-full.jpg
 sections:
   - blocks:
       - mobile-width-class: full
