@@ -278,6 +278,7 @@ module.exports = {
       '19/20': '95%',
       full: '100%',
       screen: '100vw',
+      'screen-1/2': '50vw',
     }),
     height: theme => ({
       auto: 'auto',
