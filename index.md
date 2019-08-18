@@ -5,6 +5,7 @@ sections:
   - block-margin-bottom: false
     blocks:
       - desktop-width-class: 2/3
+        light-texts: true
         mobile-width-class: full
         tablet-width-class: 3/4
         text: >-
@@ -24,12 +25,12 @@ sections:
           učení se nových pohybů a vykonávání všemožných sportů se rapidně
           zlepšila.
         type: texts
-    header: Kdo jsem
+    header: Služby
     header-alignment: text-center
     header-padding-bottom: false
     header-padding-top: false
     padding-top: true
-    subHeader: 'moje kariéra, moje sny…'
+    subHeader: ''
     type: blocks
   - blocks:
       - desktop-width-class: 2/3
