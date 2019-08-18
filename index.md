@@ -1,6 +1,6 @@
 ---
 layout: home
-title: 'Ahoj, jsem Andy'
+title: KUPAUTO s.r.o.
 sections:
   - block-margin-bottom: false
     blocks:
