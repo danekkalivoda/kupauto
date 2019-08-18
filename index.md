@@ -53,68 +53,14 @@ sections:
     blocks:
       - header: ''
         mobile-width-class: full
-        posts-count: '3'
+        posts-count: '12'
         type: blog-posts
-    header: Z blogu
+    header: Dovoz aut na zakázku
     header-alignment: text-center
     padding-top: true
-    subHeader: Píšu a ráda...
+    section-background: bg-white
+    subHeader: ''
     type: blocks
-  - block-margin-bottom: true
-    blocks:
-      - alignment: text-right
-        desktop-width-class: 1/10
-        image: /images/uploads/sport-1.svg
-        light-texts: true
-        mobile-width-class: 1/6
-        tablet-width-class: 1/5
-        type: media
-      - desktop-width-class: 1/6
-        header: Crossfit
-        light-texts: true
-        mobile-width-class: 5/6
-        tablet-width-class: 4/5
-        text: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mattis
-          facilisis blandit. Cras vehicula sem vitae faucibus maximus.
-        type: texts
-      - alignment: text-right
-        desktop-width-class: 1/10
-        image: /images/uploads/sport-2.svg
-        mobile-width-class: 1/6
-        tablet-width-class: 1/5
-        type: media
-      - desktop-width-class: 1/6
-        header: Silový trening
-        light-texts: true
-        mobile-width-class: 5/6
-        tablet-width-class: 4/5
-        text: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mattis
-          facilisis blandit. Cras vehicula sem vitae faucibus maximus.
-        type: texts
-      - alignment: text-right
-        desktop-width-class: 1/10
-        image: /images/uploads/sport-3.svg
-        mobile-width-class: 1/6
-        tablet-width-class: 1/5
-        type: media
-      - desktop-width-class: 1/6
-        header: Kardio
-        light-texts: true
-        mobile-width-class: 5/6
-        tablet-width-class: 4/5
-        text: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mattis
-          facilisis blandit. Cras vehicula sem vitae faucibus maximus.
-        type: texts
-    header: Moje sporty
-    header-alignment: text-center
-    padding-top: true
-    section-background: bg-gray-800
-    subHeader: co mě baví a jak ti můžu pomoci
-    type: blocks
-    vertical-alignment: justify-start
   - block-margin-bottom: true
     blocks:
       - alignment: text-center
