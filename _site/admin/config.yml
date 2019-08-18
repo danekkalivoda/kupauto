@@ -51,8 +51,8 @@ collections:
                 widget: select
                 options:
                   - { label: "Žádné", value: "none" }
-                  - { label: "Světlé", value: "bg-gray-800" }
-                  - { label: "Tmavé", value: "bg-gray-900" }
+                  - { label: "Světlé", value: "bg-gray-900" }
+                  - { label: "Tmavé", value: "bg-black" }
               - {label: "Světlé texty", name: "light-texts", widget: "boolean", default: false, required: false}
               - {label: "Horní odsazení nadpisu", name: "header-padding-top", widget: "boolean", default: false, required: false}
               - {label: "Dolní odsazení nadpisu", name: "header-padding-bottom", widget: "boolean", default: false, required: false}
@@ -195,8 +195,8 @@ collections:
                 widget: select
                 options:
                   - { label: "Žádné", value: "none" }
-                  - { label: "Světlé", value: "bg-gray-800" }
-                  - { label: "Tmavé", value: "bg-gray-900" }
+                  - { label: "Světlé", value: "bg-gray-900" }
+                  - { label: "Tmavé", value: "bg-black" }
   - label: "Stránky"
     name: "pages"
     folder: '/'
@@ -238,8 +238,8 @@ collections:
                 widget: select
                 options:
                   - { label: "Žádné", value: "none" }
-                  - { label: "Světlé", value: "bg-gray-800" }
-                  - { label: "Tmavé", value: "bg-gray-900" }
+                  - { label: "Světlé", value: "bg-gray-900" }
+                  - { label: "Tmavé", value: "bg-black" }
               - {label: "Světlé texty", name: "light-texts", widget: "boolean", default: false, required: false}
               - {label: "Horní odsazení nadpisu", name: "header-padding-top", widget: "boolean", default: false, required: false}
               - {label: "Dolní odsazení nadpisu", name: "header-padding-bottom", widget: "boolean", default: false, required: false}
@@ -382,16 +382,16 @@ collections:
                 widget: select
                 options:
                   - { label: "Žádné", value: "none" }
-                  - { label: "Světlé", value: "bg-gray-800" }
-                  - { label: "Tmavé", value: "bg-gray-900" }
+                  - { label: "Světlé", value: "bg-gray-900" }
+                  - { label: "Tmavé", value: "bg-black" }
       - {label: "Hlavní text", name: "body", widget: "markdown", buttons: [bold, italic, heading-two, quote, bulleted-list, numbered-list], required: false}
       - label: Pozadí obsahu
         name: background
         required: false
         widget: select
         options:
-          - { label: "Světlé", value: "bg-gray-800" }
-          - { label: "Tmavé", value: "bg-gray-900" }
+          - { label: "Světlé", value: "bg-gray-900" }
+          - { label: "Tmavé", value: "bg-black" }
       - label: Zarovnání
         name: alignment
         required: false
