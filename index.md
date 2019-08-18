@@ -39,6 +39,7 @@ sections:
     section-background: bg-gray-700
     subHeader: ''
     type: blocks
+    vertical-alignment: justify-start
   - block-margin-bottom: true
     blocks:
       - alignment: text-center
