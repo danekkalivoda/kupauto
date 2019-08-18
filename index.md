@@ -4,26 +4,21 @@ title: KUPAUTO s.r.o.
 sections:
   - block-margin-bottom: false
     blocks:
+      - aspect-ratio: aspect-ratio-4/3
+        desktop-width-class: 1/3
+        image: /images/uploads/jachym.png
+        mobile-width-class: 1/6
+        tablet-width-class: 1/4
+        type: media
       - desktop-width-class: 2/3
+        header: Autodoprava
         light-texts: true
-        mobile-width-class: full
+        mobile-width-class: 5/6
         tablet-width-class: 3/4
         text: >-
-          Zhruba do mých patnácti let u mě nikdo sportovní kariéru neočekával.
-          Byla jsem typický teenager vysedávající ve fastfoodech věnující se ze
-          sportů pouze jízdě na koni. S přibývajícími kily mi ale koně přestali
-          stačit a začala jsem se hýbat více. Od cvičení doma přes posilovnu,
-          běhání a překážkové běhy jsem se dostala až ke studiu tělesné výchovy
-          na vysoké škole.
-
-
-          Na fakultě tělesné výchovy jsem došla ke zjištění, že v některých
-          sportech vynikám, ale na některé jsem naopak naprosté dřevo. Trápení
-          se na hodinách atletiky a gymnastiky mě přivedlo k první návštěvě
-          CrossFitového gymu. Ihned na prvních hodinách mě CrossFit naprosto
-          pohltil a nadšení mi zůstalo do teď. A co se týče studia, má schopnost
-          učení se nových pohybů a vykonávání všemožných sportů se rapidně
-          zlepšila.
+          k přepravě téměř čehokoliv Vám poslouží: dodávkové a nákladní
+          automobily, odtahové speciály. Převoz menších i větších nákladů a
+          automobilů za rozumné ceny! Dále v nabídce také přeprava osob.
         type: texts
     header: Služby
     header-alignment: text-center
