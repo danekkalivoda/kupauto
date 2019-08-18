@@ -13,7 +13,7 @@
         {% if section.header-padding-top %}pt-4 sm:pt-8 {% endif %}
         {% if section.header-padding-bottom %}pb-4 {% endif %}
         text-green-500 text-2xl font-medium relative">
-        <a name="{{ section.header | slugify: 'latin' }}" class="absolute -mt-24 sm:-mt-32 h-20 translate-y-10px"></a>
+        <a name="{{ section.header | slugify: 'latin' }}" class="absolute -mt-8 h-20"></a>
         {{ section.header }}
       </h2>
     {% endif %}
