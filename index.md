@@ -27,6 +27,7 @@ sections:
     padding-top: true
     subHeader: ''
     type: blocks
+    vertical-alignment: justify-start
   - block-margin-bottom: false
     blocks:
       - header: ''
