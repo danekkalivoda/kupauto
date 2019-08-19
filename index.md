@@ -44,7 +44,7 @@ sections:
     header-padding-bottom: false
     header-padding-top: false
     padding-top: false
-    section-background: bg-gray-700
+    section-background: bg-black
     type: blocks
   - block-margin-bottom: false
     blocks:
