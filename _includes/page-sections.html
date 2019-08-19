@@ -53,14 +53,14 @@
               <div class="{{block.alignment}}{% if section.block-margin-bottom %} mb-4 sm:mb-8{% endif %}">
                 {% if block.image and block.image != "" %}
                     <div class="relative overflow-hidden {% if block.aspect-ratio and block.aspect-ratio != '' %} block {{block.aspect-ratio}}{% else %}inline-block{% endif %} {% if section.block-margin-bottom == false %}mb-2 sm:mb-4{% endif %}">
-                      <img data-src="/static{{ block.image }}" alt="{{ block.header }}" class="lozad z-10 transition-slow opacity-0 opacity-100 {% if block.aspect-ratio and block.aspect-ratio != '' %}w-full h-full absolute top-0 left-0 object-cover rounded{% else %}inline-block{% endif %}">
+                      <img data-src="/static{{ block.image }}" alt="{{ block.header }}" class="lozad z-10 transition-slow opacity-0 opacity-100 {% if block.aspect-ratio and block.aspect-ratio != '' %}w-full h-full absolute top-0 left-0 object-cover{% else %}inline-block{% endif %}">
                       <div class="absolute w-full h-full -translate-y-1/2 z-0 transition-slow">
                         <div class="spinner"></div>
                       </div>
                     </div>
                 {% endif %} 
                 {% if block.video and block.video != "" %}
-                  <div class="relative overflow-hidden rounded embed-responsive {% if section.block-margin-bottom == false %}my-2 sm:my-4{% endif %} {{block.aspect-ratio}}">
+                  <div class="relative overflow-hidden embed-responsive {% if section.block-margin-bottom == false %}my-2 sm:my-4{% endif %} {{block.aspect-ratio}}">
                     {{ block.video }}
                   </div>
                 {% endif %} 
@@ -79,38 +79,38 @@
                   <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
                   <input type='hidden' name='redirect_to' value='https://elated-goodall-275fa8.netlify.com/odeslany-formular' />
                   <div class="mb-4">
-                    <div class="relative border rounded mb-4 appearance-none label-floating">
-                      <input class="w-full py-2 px-3 leading-normal rounded focus:outline-none focus:shadow-outline" id="name" name="name" type="text" placeholder="Jméno" required>
-                      <label class="absolute block top-0 left-0 w-full px-3 py-2 text-gray-500 leading-normal text-left" for="name">
+                    <div class="relative border-2 border-gray-700 mb-4 appearance-none label-floating">
+                      <input class="w-full py-2 px-3 leading-normal bg-gray-800 text-white focus:outline-none focus:shadow-outline" id="name" name="name" type="text" placeholder="Jméno" required>
+                      <label class="absolute block top-0 left-0 w-full px-3 py-2 text-gray-300 bg-gray-800 border-0 leading-normal text-left" for="name">
                         Jméno
                       </label>
                     </div>  
                   </div>
                   <div class="mb-4">
-                    <div class="relative border rounded mb-4 appearance-none label-floating">
-                      <input class="w-full py-2 px-3 leading-normal rounded focus:outline-none focus:shadow-outline" id="email" name="email" type="text" placeholder="E-mail" required>
-                      <label class="absolute block top-0 left-0 w-full px-3 py-2 text-gray-500 leading-normal text-left" for="email">
+                    <div class="relative border-2 border-gray-700 mb-4 appearance-none label-floating">
+                      <input class="w-full py-2 px-3 leading-normal bg-gray-800 text-white focus:outline-none focus:shadow-outline" id="email" name="email" type="text" placeholder="E-mail" required>
+                      <label class="absolute block top-0 left-0 w-full px-3 py-2 text-gray-300 bg-gray-800 border-0 leading-normal text-left" for="email">
                         E-mail
                       </label>
                     </div>  
                   </div>
                   <div class="mb-4">
-                    <div class="relative border rounded mb-4 appearance-none label-floating">
-                      <input class="w-full py-2 px-3 leading-normal rounded focus:outline-none focus:shadow-outline" id="phone" name="phone" type="text" placeholder="Telefon">
-                      <label class="absolute block top-0 left-0 w-full px-3 py-2 text-gray-500 leading-normal text-left" for="phone">
+                    <div class="relative border-2 border-gray-700 mb-4 appearance-none label-floating">
+                      <input class="w-full py-2 px-3 leading-normal bg-gray-800 text-white focus:outline-none focus:shadow-outline" id="phone" name="phone" type="text" placeholder="Telefon">
+                      <label class="absolute block top-0 left-0 w-full px-3 py-2 text-gray-300 bg-gray-800 border-0 leading-normal text-left" for="phone">
                         Telefon
                       </label>
                     </div>  
                   </div>
                   <div class="mb-4">
-                    <div class="relative border rounded mb-4 appearance-none label-floating">
-                      <textarea rows="5" class="w-full py-2 px-3 leading-normal block rounded focus:outline-none focus:shadow-outline" id="message" name="message" type="text" placeholder="Zpráva pro mě" required></textarea>
-                      <label class="absolute block top-0 left-0 w-full px-3 py-2 text-gray-500 leading-normal text-left" for="message">
+                    <div class="relative border-2 border-gray-700 mb-4 appearance-none label-floating">
+                      <textarea rows="5" class="w-full py-2 px-3 leading-normal text-white block bg-gray-800 focus:outline-none focus:shadow-outline" id="message" name="message" type="text" placeholder="Zpráva pro mě" required></textarea>
+                      <label class="absolute block top-0 left-0 w-full px-3 py-2 text-gray-300 bg-gray-800 border-0 leading-normal text-left" for="message">
                           Zpráva pro mě
                       </label>
                     </div>  
                   </div>
-                  <button class="shadow bg-green-500 hover:bg-green-700 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded transition" type="submit">
+                  <button class="shadow bg-green-500 hover:bg-green-700 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 transition" type="submit">
                     Odeslat
                   </button>
                 </form>
