@@ -13,7 +13,7 @@ locale: "cs"
 
 collections:
   posts:
-    permalink: /blog/:title/
+    permalink: /auta/:title/
 
 
 # Enable section IDs in frontmatter, useful for identifying current page
