@@ -36,15 +36,66 @@ sections:
         tablet-width-class: 1/20
         type: media
       - desktop-width-class: 1/2
+        header: Financování a pojištění
         light-texts: true
         mobile-width-class: 5/6
         tablet-width-class: 3/4
-        text: test
+        text: >-
+          Na vybraný vůz jsme schopni zajistit ÚVĚR či LEASING přímo na místě.
+
+
+          Úvěr na automobil? … Ano!
+
+
+          Parametry úvěru nastavíme dle Vašich požadavků, výšku akontace, dobu
+          splácení, povinné ručení či havarijní pojištění. Vše podle Vás!
+
+
+          * \    Akontace již od 0%
+
+          * \    Možnost různých bonusů
+
+          * \    První splátku úvěru splatná až do 30 dnů po převzetí vozu
+
+          * \    Vyřízení cca do 30 min.
+
+          * \    Vůz je ve Vašem vlastnictví po celou dobu splácení
+
+          * \    Výhodné povinné i havarijní pojištění ucelené do splátek
+
+          * \    Možnost sjednání úvěru i o víkendu
+
+
+          Financování jak nového, tak i ojetého osobního, užitkového vozu,
+          motorek.
         type: texts
     header-padding-bottom: false
     header-padding-top: false
     padding-top: false
     section-background: none
+    type: blocks
+  - block-margin-bottom: false
+    blocks:
+      - aspect-ratio: aspect-ratio-4/3
+        image: /images/uploads/jachym.png
+        mobile-width-class: 1/6
+        tablet-width-class: 1/20
+        type: media
+      - desktop-width-class: 1/2
+        header: Náhradní díly
+        light-texts: true
+        mobile-width-class: 5/6
+        tablet-width-class: 3/4
+        text: >-
+          Nabízíme náhradní díly na všechny typy automobilů všech značek za
+          velmi výhodné ceny!
+
+
+          Pro zjištění ceny Vámi požadovaného dílu volejte 773 622 900
+        type: texts
+    header-padding-bottom: false
+    header-padding-top: false
+    padding-top: false
     type: blocks
   - block-margin-bottom: false
     blocks:
