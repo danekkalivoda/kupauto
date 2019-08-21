@@ -30,7 +30,7 @@ sections:
     vertical-alignment: justify-start
   - block-margin-bottom: false
     blocks:
-      - aspect-ratio: aspect-ratio-4/3
+      - aspect-ratio: aspect-ratio-square
         image: /images/uploads/ico2.svg
         mobile-width-class: 1/6
         tablet-width-class: 1/20
@@ -76,7 +76,7 @@ sections:
     type: blocks
   - block-margin-bottom: false
     blocks:
-      - aspect-ratio: aspect-ratio-4/3
+      - aspect-ratio: aspect-ratio-square
         image: /images/uploads/ico3.svg
         mobile-width-class: 1/6
         tablet-width-class: 1/20
