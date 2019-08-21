@@ -4,9 +4,9 @@ title: KUPAUTO s.r.o.
 sections:
   - block-margin-bottom: false
     blocks:
-      - aspect-ratio: aspect-ratio-4/3
+      - aspect-ratio: aspect-ratio-square
         desktop-width-class: null
-        image: /images/uploads/jachym.png
+        image: /images/uploads/ico1.svg
         mobile-width-class: 1/6
         tablet-width-class: 1/20
         type: media
@@ -31,7 +31,7 @@ sections:
   - block-margin-bottom: false
     blocks:
       - aspect-ratio: aspect-ratio-4/3
-        image: /images/uploads/jachym.png
+        image: /images/uploads/ico2.svg
         mobile-width-class: 1/6
         tablet-width-class: 1/20
         type: media
@@ -51,19 +51,19 @@ sections:
           splácení, povinné ručení či havarijní pojištění. Vše podle Vás!
 
 
-          * \    Akontace již od 0%
+          * Akontace již od 0%
 
-          * \    Možnost různých bonusů
+          * Možnost různých bonusů
 
-          * \    První splátku úvěru splatná až do 30 dnů po převzetí vozu
+          * První splátku úvěru splatná až do 30 dnů po převzetí vozu
 
-          * \    Vyřízení cca do 30 min.
+          * Vyřízení cca do 30 min.
 
-          * \    Vůz je ve Vašem vlastnictví po celou dobu splácení
+          * Vůz je ve Vašem vlastnictví po celou dobu splácení
 
-          * \    Výhodné povinné i havarijní pojištění ucelené do splátek
+          * Výhodné povinné i havarijní pojištění ucelené do splátek
 
-          * \    Možnost sjednání úvěru i o víkendu
+          * Možnost sjednání úvěru i o víkendu
 
 
           Financování jak nového, tak i ojetého osobního, užitkového vozu,
@@ -77,7 +77,7 @@ sections:
   - block-margin-bottom: false
     blocks:
       - aspect-ratio: aspect-ratio-4/3
-        image: /images/uploads/jachym.png
+        image: /images/uploads/ico3.svg
         mobile-width-class: 1/6
         tablet-width-class: 1/20
         type: media
