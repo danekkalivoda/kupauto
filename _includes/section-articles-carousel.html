@@ -1,0 +1,21 @@
+{% assign psize = site.posts | size %}
+{% if psize != 0 %}
+    <script src="{{ 'assets/js/carousel.js' | relative_url }}" defer></script>
+    {% if block.header and block.header != "" %}
+      <h2 class="font-normal text-2xl text-center">{{block.header}}</h2>
+    {% endif %}
+    <div class="{% if section.block-margin-bottom %} mb-4 sm:mb-8{% endif %}">
+        <div id="app">
+            <carousel :slides="[
+                {% for post in site.posts limit:block.posts-count %}
+                {
+                    title: '{{post.title}}',
+                    content: '{{ post.content | strip_html | strip_newlines | truncate: 156}}',
+                    image: '/static{{ post.image }}?nf_resize=fit&w=800'
+                },
+                {% endfor %}
+            ]">
+            </carousel>
+        </div>
+    </div>
+{% endif %}

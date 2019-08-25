@@ -382,6 +382,10 @@ module.exports = {
     },
     inset: {
       '0': 0,
+      '1/2': '50%',
+      '-1/2': '-50%',
+      'screen-1/2': '50vw',
+      '-screen-1/2': '-50vw',
       auto: 'auto',
     },
     transform: { // defaults to this value

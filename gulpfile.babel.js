@@ -104,7 +104,8 @@ task("processJavascriptBundles", done => {
       ],
       entry: {
         app: ['./src/app.js'],
-        gallery: ['./src/gallery.js']
+        //gallery: ['./src/gallery.js'],
+        carousel: ['./src/carousel.js']
       },
       output: {
         filename: '[name].js',
