@@ -45,6 +45,9 @@ body{
 h2, h3, h4, h5, p, ul{
 	@apply mb-4;
 }
+h3{
+	@apply font-bold text-white;
+}
 ul{
 	li{
 		position: relative;
