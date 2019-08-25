@@ -114,6 +114,18 @@
                     <img src="https://icon.now.sh/local_post_office/ffffff" class="h-6 mr-4"> Odeslat
                   </button>
                 </form>
+                <script>
+                  window.sk=window.sk||function(){(sk.q=sk.q||[]).push(arguments)};
+                  sk('form', '#my-form', {
+                    id: '425487efcac9',
+                      onSuccess: function(config) {
+                      var h = config.h;
+                      var form = config.form;
+                      var replacement = h("div", "Thank you!");
+                      form.parentNode.replaceChild(replacement, form);
+                    }
+                  });
+                </script>
               </div>
             </div>
             {% endif %}
