@@ -444,6 +444,7 @@ module.exports = {
       },
       colors: { // defaults to {}
         'black-transparent-25': ['rgba(74, 85, 104, 0) 0%', 'rgba(0, 0, 0, 0.5) 50%'],
+        'geen': ['rgba(122,154,41,1) 0%, rgba(152,173,66,1) 50%, rgba(128,159,41,1) 51%, rgba(85,122,39,1) 100%);']
       },
     },
   },
