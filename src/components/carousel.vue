@@ -16,7 +16,7 @@
         visibleSlides: 2,
         slideRatio: 1/2
       },
-      640: {
+      480: {
         visibleSlides: 1,
         slideRatio: 1/1
       }
