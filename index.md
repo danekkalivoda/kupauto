@@ -99,6 +99,18 @@ sections:
     type: blocks
   - block-margin-bottom: false
     blocks:
+      - alignment: text-center
+        desktop-width-class: 2/3
+        light-texts: true
+        mobile-width-class: full
+        tablet-width-class: 1/2
+        text: >-
+          Sháníte vůz? … Nedaří se? … Máte speciální přání a český trh jej
+          nenabízí ? … Nebo jen nedůvěřujete českým autobazarům? Pošlete nám
+          Vaší poptávku s konkrétními požadavky na vůz a my Vám zašleme nabídku
+          na takový vůz, který odpovídá Vašim požadavkům nebo jim je co
+          nejblíže.
+        type: texts
       - header: ''
         mobile-width-class: full
         posts-count: '12'
