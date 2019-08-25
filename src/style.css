@@ -164,13 +164,15 @@ html {
 	overflow: hidden;
 }
 
-
+/* purgecss start ignore */
 .vueperslide__content-wrapper{
 	@apply w-full p-4;
 }
 .vueperslides__parallax-wrapper{
 	@apply pb-64;
 }
+/* purgecss end ignore */
+
 /** sal styling **/
 /* purgecss start ignore */
 [data-sal] {

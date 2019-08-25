@@ -11,16 +11,6 @@ sal({
 });
 
 const state = getViewportState();
-const updateValues = ({
-    size, scroll
-}) => {
-    if (scroll.changed) {
-        let progressState = Math.round((scroll.top / (document.body.scrollHeight - size.y)) * 100);
-        let progressBar = document.getElementById("progressBar");
-        progressBar.style.transform = "translateX(" + (-(100 - progressState)) + '%)';
-    }
-};
-watchViewport(updateValues);
 
 (function() {
     const observer = lozad('.lozad', {
