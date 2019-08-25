@@ -4,8 +4,8 @@
     {% if block.header and block.header != "" %}
       <h2 class="font-normal text-2xl text-center">{{block.header}}</h2>
     {% endif %}
-    <div class="{% if section.block-margin-bottom %} mb-4 sm:mb-8{% endif %}">
-        <div id="app">
+    <div class="{% if section.block-margin-bottom %} mb-4 sm:mb-8{% endif %} relative">
+        <div id="app" class="w-screen relative left-1/2 -translate-x-1/2">
             <carousel :slides="[
                 {% for post in site.posts limit:block.posts-count %}
                 {

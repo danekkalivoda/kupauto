@@ -165,6 +165,12 @@ html {
 }
 
 
+.vueperslide__content-wrapper{
+	@apply w-full p-4;
+}
+.vueperslides__parallax-wrapper{
+	@apply pb-64;
+}
 /** sal styling **/
 /* purgecss start ignore */
 [data-sal] {
