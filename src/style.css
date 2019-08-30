@@ -119,7 +119,7 @@ html {
 }
 
 .label-floating input:not(:placeholder-shown), .label-floating textarea:not(:placeholder-shown) {
-	@apply pt-6;
+	@apply pt-8;
 }
 .label-floating input:not(:placeholder-shown) ~ label, .label-floating textarea:not(:placeholder-shown) ~ label {
 	font-size: 0.6rem;
@@ -168,6 +168,19 @@ html {
 }
 
 /* purgecss start ignore */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+	border: none;
+	-webkit-text-fill-color: white;
+	-webkit-box-shadow: 0 0 0px 1000px #1B1D1B inset;
+}
 .vueperslide__content-wrapper{
 	@apply w-full p-4;
 }
