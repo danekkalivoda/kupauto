@@ -205,6 +205,7 @@ collections:
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
       - {label: "Nadpis", name: "title", widget: "string"}
+      - {label: "Podnadpis", name: "subtitle", widget: "string"}
       - {label: "Hlavní text", name: "body", widget: "markdown", buttons: [bold, italic, heading-two, quote, bulleted-list, numbered-list], required: false}
       - label: "Hlavní obsah"
         name: "sections"
