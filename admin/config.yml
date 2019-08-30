@@ -424,5 +424,5 @@ collections:
         fields:
           - {label: Kontaktní tlačítko - text, name: button-text, widget: string}
           - {label: Kontaktní tlačítko - url, name: button-url, widget: string}
-          - {label: Kontaktní telefon, name: button-url, widget: string}
+          - {label: Kontaktní telefon, name: telephone, widget: string}
           - {label: Texty v patičce, name: footer-texts, widget: string}
