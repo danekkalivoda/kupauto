@@ -28,23 +28,4 @@ layout: default
     </div>
 </section>
 
-
-{% include page-sections.html %} {% if page.content and page.content != "" %}
-<section
-        class="{{
-    page.background
-  }}{% if page.margin-bottom %} mb-4 sm:mb-8{% endif %}{% if page.margin-top %} mt-4 sm:mt-8{% endif %}{% if page.light-texts %} text-white{% endif %}"
->
-    <div
-            class="max-w-6xl mx-auto flex flex-wrap justify-center px-4 sm:px-8 lg:px-24"
-    >
-        <main
-                class="flex-col w-full md:w-3/4 py-8 sm:px-4 md:px-8 leading-normal {{
-        page.alignment
-      }}"
-        >
-            {{ content }}
-        </main>
-    </div>
-</section>
-{% endif %}
+{% include page-sections.html %}

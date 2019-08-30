@@ -418,3 +418,11 @@ collections:
             fields:
               - {label: Text, name: text, widget: string}
               - {label: Url, name: url, widget: string}
+      - label: "Nastavení"
+          name: "sitesetting"
+          file: "_data/sitesettings.yml"
+          fields:
+            - {label: Kontaktní tlačítko - text, name: button-text, widget: string}
+            - {label: Kontaktní tlačítko - url, name: button-url, widget: string}
+            - {label: Kontaktní telefon, name: button-url, widget: string}
+            - {label: Texty v patičce, name: footer-texts, widget: string}
