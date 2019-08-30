@@ -205,6 +205,7 @@ collections:
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
       - {label: "Nadpis", name: "title", widget: "string"}
+      - {label: "Hlavní text", name: "body", widget: "markdown", buttons: [bold, italic, heading-two, quote, bulleted-list, numbered-list], required: false}
       - label: "Hlavní obsah"
         name: "sections"
         widget: "list"
@@ -384,7 +385,6 @@ collections:
                   - { label: "Žádné", value: "none" }
                   - { label: "Světlé", value: "bg-gray-700" }
                   - { label: "Tmavé", value: "bg-black" }
-      - {label: "Hlavní text", name: "body", widget: "markdown", buttons: [bold, italic, heading-two, quote, bulleted-list, numbered-list], required: false}
       - label: Pozadí obsahu
         name: background
         required: false
