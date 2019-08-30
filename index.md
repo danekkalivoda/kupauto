@@ -145,4 +145,4 @@ background: bg-gray-800
 light-texts: true
 published: true
 ---
-
+Tady máme popis stránky
