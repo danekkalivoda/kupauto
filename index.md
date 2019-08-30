@@ -1,6 +1,7 @@
 ---
 layout: home
 title: KUPAUTO s.r.o.
+subtitle: Dovoz a prodej aut na zakázku
 sections:
   - block-margin-bottom: false
     blocks:
@@ -145,4 +146,4 @@ background: bg-gray-800
 light-texts: true
 published: true
 ---
-Tady máme popis stránky
+Společnost KUPAUTO s.r.o. se zabývá prodejem a individuálním dovozem automobilů ze zahraničí, s touto činností máme již dlouholetou praxi a značné zkušenosti získané především díky našim zákazníkům a obchodním partnerům.
