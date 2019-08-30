@@ -122,7 +122,7 @@ sections:
         type: media
       - desktop-width-class: 1/2
         header: Servis
-        light-texts: false
+        light-texts: true
         mobile-width-class: 5/6
         tablet-width-class: 3/4
         text: >-
@@ -147,7 +147,7 @@ sections:
         type: media
       - desktop-width-class: 1/2
         header: náhradní díly
-        light-texts: false
+        light-texts: true
         mobile-width-class: 5/6
         tablet-width-class: 3/4
         text: >-
@@ -172,7 +172,7 @@ sections:
         type: media
       - desktop-width-class: 1/2
         header: půjčovna
-        light-texts: false
+        light-texts: true
         mobile-width-class: 5/6
         tablet-width-class: 3/4
         text: >-
