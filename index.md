@@ -90,7 +90,7 @@ sections:
   - block-margin-bottom: false
     blocks:
       - aspect-ratio: aspect-ratio-square
-        image: /images/uploads/ico3.svg
+        image: /images/uploads/ico5.svg
         mobile-width-class: 1/6
         tablet-width-class: 1/20
         type: media
@@ -116,7 +116,7 @@ sections:
   - block-margin-bottom: false
     blocks:
       - aspect-ratio: aspect-ratio-square
-        image: /images/uploads/ico1.svg
+        image: /images/uploads/ico3.svg
         mobile-width-class: 1/6
         tablet-width-class: 1/20
         type: media
@@ -141,7 +141,7 @@ sections:
   - block-margin-bottom: false
     blocks:
       - aspect-ratio: aspect-ratio-square
-        image: /images/uploads/ico3.svg
+        image: /images/uploads/ico6.svg
         mobile-width-class: 1/6
         tablet-width-class: 1/20
         type: media
@@ -166,7 +166,7 @@ sections:
   - block-margin-bottom: false
     blocks:
       - aspect-ratio: aspect-ratio-square
-        image: /images/uploads/ico3.svg
+        image: /images/uploads/ico7.svg
         mobile-width-class: 1/6
         tablet-width-class: 1/20
         type: media
