@@ -45,7 +45,7 @@
                   <h3 class='{{block.font-size}} font-bold{% if block.light-texts%} text-white{% endif %}'>{{ block.header }}</h3>
                 {% endif %}
                 {% if block.text and block.text != '' %}
-                  <div class='{{block.font-size}}{% if block.light-texts%} text-gray-400{% endif %}{% if block.header and block.header != "" %} mt-2{% endif %}'>{{ block.text | markdownify }}</div>
+                  <div class='{{block.font-size}}{% if block.light-texts%} text-gray-200{% endif %}{% if block.header and block.header != "" %} mt-2{% endif %}'>{{ block.text | markdownify }}</div>
                 {% endif %}
               </div>
             {% endif %}
