@@ -94,18 +94,11 @@ sections:
         tablet-width-class: 1/20
         type: media
       - desktop-width-class: 1/2
-        header: náhradní díly
+        header: Náhradní díly
         light-texts: true
         mobile-width-class: 5/6
         tablet-width-class: 3/4
-        text: >-
-          Etiam gravida purus nec leo facilisis, in malesuada enim posuere.
-          Vivamus eget felis sit amet felis ultrices sodales. In vel felis
-          volutpat ipsum ullamcorper elementum id quis quam. Praesent vitae mi
-          quam. Cras sit amet pharetra sapien, viverra consectetur massa. Nam
-          finibus pretium gravida. Donec ultricies pretium sagittis. Proin
-          accumsan nulla at justo pretium facilisis eget id lorem. Donec iaculis
-          in ipsum vitae consectetur
+        text: "Nabízíme nové i použité náhradní díly na automobily všech značek za velmi výhodné ceny!\r\n\nPro zjištění ceny Vámi požadovaného dílu volejte 601 347 260"
         type: texts
     header-padding-bottom: false
     header-padding-top: false
@@ -119,17 +112,17 @@ sections:
         tablet-width-class: 1/20
         type: media
       - desktop-width-class: 1/2
-        header: půjčovna
+        header: Půjčovna
         light-texts: true
         mobile-width-class: 5/6
         tablet-width-class: 3/4
         text: >-
-          Aenean eget felis gravida metus porta vulputate vitae et sem. Duis id
-          nulla lobortis, vestibulum diam vitae, gravida quam. Nam eu dignissim
-          nisi. Nullam libero nunc, blandit eu tempor in, condimentum at neque.
-          Praesent aliquam luctus nulla sed accumsan. Nam in justo vehicula,
-          gravida nisl id, scelerisque justo. Sed eleifend purus nec ipsum
-          fermentum porta.
+          Nabízíme krátkodobý i dlouhodobý pronájem dodávek a osobních
+          automobilů.. 
+
+
+          K zapůjčení poskytujeme užitkové vozy Citroen Jumper MAXI 2.5 TDi,
+          FORD TRANSIT L1H1, FORD TRANSIT VALNIK S PLACHTOU.
         type: texts
     header-padding-bottom: false
     header-padding-top: false
