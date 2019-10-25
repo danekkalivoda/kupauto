@@ -76,13 +76,11 @@ sections:
         mobile-width-class: 5/6
         tablet-width-class: 3/4
         text: >-
-          Etiam gravida purus nec leo facilisis, in malesuada enim posuere.
-          Vivamus eget felis sit amet felis ultrices sodales. In vel felis
-          volutpat ipsum ullamcorper elementum id quis quam. Praesent vitae mi
-          quam. Cras sit amet pharetra sapien, viverra consectetur massa. Nam
-          finibus pretium gravida. Donec ultricies pretium sagittis. Proin
-          accumsan nulla at justo pretium facilisis eget id lorem. Donec iaculis
-          in ipsum vitae consectetur
+          Nabízíme vám kompletní autoservis a pneuservis osobních a užitkových
+          vozů všech značek.
+
+
+          Více informací na www.tdauto.cz nebo telefonu 773 622 900
         type: texts
     header-padding-bottom: false
     header-padding-top: false
