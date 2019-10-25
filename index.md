@@ -57,7 +57,7 @@ sections:
         light-texts: true
         mobile-width-class: 5/6
         tablet-width-class: 3/4
-        text: "Na vybraný vůz jsme schopni zajistit ÚVĚR či LEASING přímo na místě.\r\n\n\rParametry úvěru nastavíme dle Vašich požadavků, výšku akontace, dobu splácení, povinné ručení či havarijní pojištění. Vše podle Vás!\n\nV současné době nabízíme produkty společnosti:\r\n\nMONETA MONEY AUTO a.s."
+        text: "Na vybraný vůz jsme schopni zajistit ÚVĚR či LEASING přímo na místě.\r\n\n\rParametry úvěru nastavíme dle Vašich požadavků, výšku akontace, dobu splácení, povinné ručení či havarijní pojištění. Vše podle Vás!\n\nV současné době nabízíme produkty společnosti:\r\n\n**MONETA MONEY AUTO a.s.**"
         type: texts
     header-padding-bottom: false
     header-padding-top: false
@@ -80,7 +80,7 @@ sections:
           vozů všech značek.
 
 
-          Více informací na www.tdauto.cz nebo telefonu 773 622 900
+          Více informací na **www.tdauto.cz** nebo telefonu **773 622 900**
         type: texts
     header-padding-bottom: false
     header-padding-top: false
@@ -98,7 +98,7 @@ sections:
         light-texts: true
         mobile-width-class: 5/6
         tablet-width-class: 3/4
-        text: "Nabízíme nové i použité náhradní díly na automobily všech značek za velmi výhodné ceny!\r\n\nPro zjištění ceny Vámi požadovaného dílu volejte 601 347 260"
+        text: "Nabízíme nové i použité náhradní díly na automobily všech značek za velmi výhodné ceny!\r\n\nPro zjištění ceny Vámi požadovaného dílu volejte **601 347 260**"
         type: texts
     header-padding-bottom: false
     header-padding-top: false
