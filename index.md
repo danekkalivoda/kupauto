@@ -38,37 +38,7 @@ sections:
         light-texts: true
         mobile-width-class: 5/6
         tablet-width-class: 3/4
-        text: >-
-          Text bloku pojištění
-
-
-          Na vybraný vůz jsme schopni zajistit ÚVĚR či LEASING přímo na místě.
-
-
-          Úvěr na automobil? … Ano!
-
-
-          Parametry úvěru nastavíme dle Vašich požadavků, výšku akontace, dobu
-          splácení, povinné ručení či havarijní pojištění. Vše podle Vás!
-
-
-          * Akontace již od 0%
-
-          * Možnost různých bonusů
-
-          * První splátku úvěru splatná až do 30 dnů po převzetí vozu
-
-          * Vyřízení cca do 30 min.
-
-          * Vůz je ve Vašem vlastnictví po celou dobu splácení
-
-          * Výhodné povinné i havarijní pojištění ucelené do splátek
-
-          * Možnost sjednání úvěru i o víkendu
-
-
-          Financování jak nového, tak i ojetého osobního, užitkového vozu,
-          motorek.
+        text: "Pojištění pro klidný odjezd s nově zakoupeným vozem \n\nSjednání povinného ručení i havarijního pojištění od společností:\n\n\r**Česká podnikatelská pojišťovna**"
         type: texts
     header-padding-bottom: false
     header-padding-top: false
