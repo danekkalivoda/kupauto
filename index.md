@@ -38,7 +38,7 @@ sections:
         light-texts: true
         mobile-width-class: 5/6
         tablet-width-class: 3/4
-        text: "Pojištění pro klidný odjezd s nově zakoupeným vozem \n\nSjednání povinného ručení i havarijního pojištění od společností:\n\n\r**Česká podnikatelská pojišťovna**"
+        text: "Pojištění pro klidný odjezd s nově zakoupeným vozem \n\nSjednání povinného ručení i havarijního pojištění od společnosti:\n\n\r**Česká podnikatelská pojišťovna, a.s.**"
         type: texts
     header-padding-bottom: false
     header-padding-top: false
@@ -57,15 +57,7 @@ sections:
         light-texts: true
         mobile-width-class: 5/6
         tablet-width-class: 3/4
-        text: >-
-          Text bloku financování
-
-
-          Nabízíme náhradní díly na všechny typy automobilů všech značek za
-          velmi výhodné ceny!
-
-
-          Pro zjištění ceny Vámi požadovaného dílu volejte 773 622 900
+        text: "Na vybraný vůz jsme schopni zajistit ÚVĚR či LEASING přímo na místě.\r\n\n\rParametry úvěru nastavíme dle Vašich požadavků, výšku akontace, dobu splácení, povinné ručení či havarijní pojištění. Vše podle Vás!\n\nV současné době nabízíme produkty společnosti:\r\n\nMONETA MONEY AUTO a.s."
         type: texts
     header-padding-bottom: false
     header-padding-top: false
