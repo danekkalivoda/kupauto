@@ -12,23 +12,11 @@ sections:
         tablet-width-class: 1/20
         type: media
       - desktop-width-class: 1/2
-        header: Dovoz
+        header: Dovoz automobilů na zakázku
         light-texts: true
         mobile-width-class: 5/6
         tablet-width-class: 3/4
-        text: >-
-          **text k bloku dovoz.**
-
-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-          vestibulum elementum felis, tempus pulvinar justo aliquam ac. Nam
-          magna magna, molestie ac lectus nec, viverra mattis est. Donec rhoncus
-          risus quis odio facilisis vestibulum. Nam lacus justo, rhoncus non
-          scelerisque quis, placerat quis velit. Etiam vestibulum finibus
-          lobortis. Cras vitae ipsum mattis, convallis arcu sit amet, ornare
-          felis. Nunc non hendrerit sem. In nec dapibus ex. Suspendisse varius
-          neque ut erat vestibulum malesuada. Vivamus at risus elementum,
-          euismod eros eu, lacinia leo.
+        text: "**Individuální dovoz aut ze zahraničí**\n\nSHÁNÍTE VŮZ? … NEDAŘÍ SE? … MÁTE SPECIÁLNÍ PŘÁNÍ A ČESKÝ TRH JEJ NENABÍZÍ ? … NEBO JEN NEDŮVĚŘUJETE ČESKÝM AUTOBAZARŮM?\r\n\nPOŠLETE NÁM VAŠÍ POPTÁVKU S KONKRÉNÍMI POŽADAVKY NA VŮZ A MY VÁM ZAŠLEME NABÍDKU NA TAKOVÝ VŮZ, KTERÝ ODPOVÍDÁ VAŠIM POŽADAVKŮ NEBO JIM JE CO NEJBLÍŽE\r\n\nAť je Váš důvod jakýkoli, je tu pro Vás možnost individuálního dovozu automobilu ze zahraničí.\r\n\n\rAutomobily dovážíme z EU, převážně z Německa.\r\n\nRádi s Vámi zkonzultujeme Vaše přání, poradíme s výběrem a vůz následně vyhledáme."
         type: texts
     header: Služby
     header-alignment: text-center
