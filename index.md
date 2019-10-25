@@ -121,8 +121,8 @@ sections:
           automobilů.. 
 
 
-          K zapůjčení poskytujeme užitkové vozy Citroen Jumper MAXI 2.5 TDi,
-          FORD TRANSIT L1H1, FORD TRANSIT VALNIK S PLACHTOU.
+          K zapůjčení poskytujeme užitkové vozy Citroen Jumper MAXI, FORD
+          TRANSIT L1H1, FORD TRANSIT VALNIK S PLACHTOU.
         type: texts
     header-padding-bottom: false
     header-padding-top: false
@@ -135,23 +135,13 @@ sections:
         light-texts: true
         mobile-width-class: full
         tablet-width-class: 1/2
-        text: >-
-          Sháníte vůz? … Nedaří se? … Máte speciální přání a český trh jej
-          nenabízí ? … Nebo jen nedůvěřujete českým autobazarům? Pošlete nám
-          Vaší poptávku s konkrétními požadavky na vůz a my Vám zašleme nabídku
-          na takový vůz, který odpovídá Vašim požadavkům nebo jim je co
-          nejblíže.
-
-
-
-
-          ### Dovezené vozy na zakázku
+        text: '### Námi dovezené vozy na zakázku'
         type: texts
       - header: ''
         mobile-width-class: full
         posts-count: '12'
         type: blog-posts
-    header: Dovoz aut na zakázku
+    header: Reference
     header-alignment: text-center
     padding-top: true
     section-background: bg-gray-700
