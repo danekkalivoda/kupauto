@@ -16,7 +16,28 @@ sections:
         light-texts: true
         mobile-width-class: 5/6
         tablet-width-class: 3/4
-        text: "**Individuální dovoz aut ze zahraničí**\n\nSHÁNÍTE VŮZ? … NEDAŘÍ SE? … MÁTE SPECIÁLNÍ PŘÁNÍ A ČESKÝ TRH JEJ NENABÍZÍ ? … NEBO JEN NEDŮVĚŘUJETE ČESKÝM AUTOBAZARŮM?\r\n\nPOŠLETE NÁM VAŠÍ POPTÁVKU S KONKRÉNÍMI POŽADAVKY NA VŮZ A MY VÁM ZAŠLEME NABÍDKU NA TAKOVÝ VŮZ, KTERÝ ODPOVÍDÁ VAŠIM POŽADAVKŮ NEBO JIM JE CO NEJBLÍŽE\r\n\nAť je Váš důvod jakýkoli, je tu pro Vás možnost individuálního dovozu automobilu ze zahraničí.\r\n\n\rAutomobily dovážíme z EU, převážně z Německa.\r\n\nRádi s Vámi zkonzultujeme Vaše přání, poradíme s výběrem a vůz následně vyhledáme."
+        text: >-
+          **Individuální dovoz aut ze zahraničí**
+
+
+          SHÁNÍTE VŮZ? … NEDAŘÍ SE? … MÁTE SPECIÁLNÍ PŘÁNÍ A ČESKÝ TRH JEJ
+          NENABÍZÍ ? … NEBO JEN NEDŮVĚŘUJETE ČESKÝM AUTOBAZARŮM?
+
+
+          Ať je Váš důvod jakýkoli, je tu pro Vás možnost individuálního dovozu
+          automobilu ze zahraničí.
+
+
+          POŠLETE NÁM VAŠÍ POPTÁVKU S KONKRÉTNÍMI POŽADAVKY NA VŮZ A MY VÁM
+          ZAŠLEME NABÍDKU NA TAKOVÝ VŮZ, KTERÝ ODPOVÍDÁ VAŠIM POŽADAVKŮ NEBO JIM
+          JE CO NEJBLÍŽE
+
+
+          Automobily dovážíme z EU, převážně z Německa.
+
+
+          Rádi s Vámi zkonzultujeme Vaše přání, poradíme s výběrem a vůz
+          následně vyhledáme.
         type: texts
     header: Služby
     header-alignment: text-center
