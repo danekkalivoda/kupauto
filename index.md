@@ -25,16 +25,16 @@ sections:
           automobilu ze zahraničí.
 
 
-          POŠLETE NÁM VAŠÍ POPTÁVKU S KONKRÉTNÍMI POŽADAVKY NA VŮZ A MY VÁM
-          ZAŠLEME NABÍDKU NA TAKOVÝ VŮZ, KTERÝ ODPOVÍDÁ VAŠIM POŽADAVKŮ NEBO JIM
-          JE CO NEJBLÍŽE
+          Rádi s Vámi zkonzultujeme Vaše přání, poradíme s výběrem a vůz
+          následně vyhledáme.
+
+
+          Pošlete nám poptávku s konkrétními požadavky na vůz a my Vám zašleme
+          nabídku s vozem, který odpovídá Vašim požadavkům nebo jim je co
+          nejblíže
 
 
           Automobily dovážíme z EU, převážně z Německa.
-
-
-          Rádi s Vámi zkonzultujeme Vaše přání, poradíme s výběrem a vůz
-          následně vyhledáme.
         type: texts
     header: Služby
     header-alignment: text-center
