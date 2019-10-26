@@ -98,7 +98,7 @@ sections:
           vozů všech značek.
 
 
-          Více informací na **www.tdauto.cz** nebo telefonu **773 622 900**
+          Více informací a objednání na telefonu **773 622 900**
         type: texts
     header-padding-bottom: false
     header-padding-top: false
