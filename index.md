@@ -56,7 +56,15 @@ sections:
         light-texts: true
         mobile-width-class: 5/6
         tablet-width-class: 3/4
-        text: "Pojištění pro klidný odjezd s nově zakoupeným vozem \n\nSjednání povinného ručení i havarijního pojištění od společnosti:\n\n\r**Česká podnikatelská pojišťovna, a.s.**"
+        text: >-
+          Na místě Vám sjednáme pojištění pro klidný odjezd s nově zakoupeným
+          vozem 
+
+
+          Povinného ručení i havarijního pojištění od společnosti:
+
+
+          **Česká podnikatelská pojišťovna, a.s.**
         type: texts
     header-padding-bottom: false
     header-padding-top: false
@@ -187,4 +195,4 @@ background: bg-gray-800
 light-texts: true
 published: true
 ---
-Společnost KUPAUTO s.r.o. se zabývá prodejem a individuálním dovozem automobilů ze zahraničí, s touto činností máme již dlouholetou praxi a značné zkušenosti získané především díky našim zákazníkům a obchodním partnerům.
+Společnost KUPAUTO s.r.o. se zabývá prodejem a individuálním dovozem automobilů ze zahraničí. S touto činností máme již dlouholetou praxi a značné zkušenosti získané především díky našim zákazníkům a obchodním partnerům.
