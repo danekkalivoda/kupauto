@@ -141,6 +141,9 @@ sections:
 
           K zapůjčení poskytujeme užitkové vozy Citroen Jumper MAXI, FORD
           TRANSIT L1H1, FORD TRANSIT VALNIK S PLACHTOU.
+
+
+          Více informací a rezervace na telefonu 773 622 900
         type: texts
     header-padding-bottom: false
     header-padding-top: false
