@@ -17,9 +17,6 @@ sections:
         mobile-width-class: 5/6
         tablet-width-class: 3/4
         text: >-
-          **Individuální dovoz aut ze zahraničí**
-
-
           SHÁNÍTE VŮZ? … NEDAŘÍ SE? … MÁTE SPECIÁLNÍ PŘÁNÍ A ČESKÝ TRH JEJ
           NENABÍZÍ ? … NEBO JEN NEDŮVĚŘUJETE ČESKÝM AUTOBAZARŮM?
 
