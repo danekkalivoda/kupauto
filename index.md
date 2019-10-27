@@ -168,7 +168,7 @@ sections:
         type: texts
       - header: ''
         mobile-width-class: full
-        posts-count: '28'
+        posts-count: '40'
         type: blog-posts
     header: Reference
     header-alignment: text-center
