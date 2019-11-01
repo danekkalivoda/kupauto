@@ -61,6 +61,11 @@ task("buildJekyll", () => {
 //     .pipe(dest(jsRoot))
 // });
 
+task('copy-redirects', done =>  {
+    return src('./src/_redirects')
+        .pipe(dest('./_site/'));
+});
+
 task("processJavascriptBundles", done => {
   browserSync.notify("Compiling javascriptBundles...");
   return src(rawJsBundles)
@@ -184,7 +189,7 @@ task("startServer", () => {
   );
 });
 
-const buildSite = series("buildJekyll", "processStyles", "processJavascriptBundles");
+const buildSite = series("buildJekyll", "processStyles", "processJavascriptBundles", "copy-redirects");
 
 exports.serve = series(buildSite, "startServer");
 exports.default = series(buildSite);
